@@ -24,7 +24,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:name, :monsters_captured, :image)
+    params.require(:character).permit(:name, :image, :timesplayed, :wins, :deaths, :jackscaptured)
   end
 
 end
